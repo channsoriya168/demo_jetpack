@@ -12,6 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.soriya.demo.Navigation.ButtonNavigationBar
 import com.soriya.demo.Navigation.NavGraph
+import com.soriya.demo.ui.Components.CarouselComposable
+import com.soriya.demo.ui.Components.ChipComposable
+import com.soriya.demo.ui.Components.DatePickerComposable
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +22,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
 
         setContent {
-            MainScreen()
+//            CarouselComposable()
+//            ChipComposable()
+            DatePickerComposable()
+//            MainScreen()
         }
     }
 }
